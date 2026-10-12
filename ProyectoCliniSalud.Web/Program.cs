@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using ProyectoCliniSalud.DataAccess.Data; 
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<CliniSaludDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
