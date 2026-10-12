@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="ProyectoCliniSalud.Business/ProyectoCliniSalud.Business.csproj" />
+  <Project Path="ProyectoCliniSalud.DataAccess/ProyectoCliniSalud.DataAccess.csproj" />
+  <Project Path="ProyectoCliniSalud.Entities/ProyectoCliniSalud.Entities.csproj" />
+  <Project Path="ProyectoCliniSalud.Web/ProyectoCliniSalud.Web.csproj" />
+</Solution>
