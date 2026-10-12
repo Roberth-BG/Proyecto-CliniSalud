@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
+    <Folder Include="Data\" />
     <Folder Include="Migrations\" />
     <Folder Include="Helpers\" />
     <Folder Include="Repositories\" />
