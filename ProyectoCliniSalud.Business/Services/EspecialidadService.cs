@@ -136,10 +136,10 @@ namespace ProyectoCliniSalud.Business.Services
         {
             try
             {
-                var medicosActivosConEspecialidad = await _medicoRepository.ConsultarAsync(m => m.IdEspecialidad == id && m.Activo);
-                if (medicosActivosConEspecialidad.Any())
+                var medicosConEspecialidad = await _medicoRepository.ConsultarAsync(m => m.IdEspecialidad == id);
+                if (medicosConEspecialidad.Any())
                 {
-                    return (false, "No se puede desactivar la especialidad porque existen médicos activos vinculados a ella.");
+                    return (false, "No se puede desactivar la especialidad porque existen médicos vinculados a ella.");
                 }
 
                 var especialidad = await _especialidadRepository.ObtenerPorIdAsync(id);
